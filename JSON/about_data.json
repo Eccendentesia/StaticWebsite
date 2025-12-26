@@ -1,0 +1,24 @@
+[
+    {   "id":1,
+        "logo":"experience",
+        "title":"18+",
+        "text":"Months Experience",
+        "description":"Dedicated service in dialysis care"
+    },
+     {  "id":2,
+        "logo":"hospital",
+        "title":"Memorial Regional",
+        "text":"Current Hospital",
+        "description":"Leading healthcare institution"
+    }, {"id":3,
+        "logo":"achievement",
+        "title":"Hemodialysis",
+        "text":"Specializations",
+        "description":"Expert in renal replacement therapy"
+    }, {"id":4,
+        "logo":"skills",
+        "title":"500+",
+        "text":"Treatments",
+        "description":"Successfully administered"
+    }
+]

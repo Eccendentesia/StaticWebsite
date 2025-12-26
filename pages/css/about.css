@@ -1,0 +1,36 @@
+.about-card{
+  border:1px solid rgba(6, 255, 217, 0.1);
+    transition:all 0.4s ease; 
+}
+.about-card:hover{
+    box-shadow:  0px 10px 20px 1px  rgba(6, 255, 218, 0.113) ,
+    -50px -50px 150px -3px  rgba(6, 255, 218, 0.064) inset;
+    transform:scale(1.02); 
+
+}
+.logo-holder {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(17, 59, 53, 0.3);
+  color: rgba(6, 255, 217, 1);
+  border-radius: 12px;
+  transition: 
+    background-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.about-card:hover .logo-holder {
+  background-color: rgb(21, 79, 70);
+}
+.about-para{
+  width:800px;
+  background-color:rgba(15, 23, 42, 0.6) ;
+  padding:40px ;
+  border-radius:25px;
+}
+@media(max-width:720px){
+  .about-para{
+     padding:50px;
+  }
+}

@@ -1,0 +1,10 @@
+.contact-last{
+    box-shadow:-5px -5px 300px 10px rgba(6, 255, 217, 0.1 ) inset; 
+}
+.contact-button{
+    height:55px ;
+    width:55px ;
+    background-color:rgba(17, 59, 53, 0.5) ;
+    color:rgba(6, 255, 217, 1 ) ;
+    border-radius:10px ;
+}
