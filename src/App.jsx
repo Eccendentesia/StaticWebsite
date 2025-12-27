@@ -6,7 +6,10 @@ import {createBrowserRouter , RouterProvider } from 'react-router-dom'
 
 function App() {
  const router = createBrowserRouter([
-  {path:"StaticWebsite//",
+  {path:"StaticWebsite/",
+    element:<Applayout />
+  },
+   {path:"/",
     element:<Applayout />
   },
   
