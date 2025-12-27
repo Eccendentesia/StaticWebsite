@@ -6,13 +6,10 @@ import {createBrowserRouter , RouterProvider } from 'react-router-dom'
 
 function App() {
  const router = createBrowserRouter([
-  {path:"/",
+  {path:"StaticWebsite//",
     element:<Applayout />
   },
-  {
-    path:"eccendentesia.github.io/StaticWebsite/",
-    element:<Applayout/>
-  }
+  
  ])
 
   return (
