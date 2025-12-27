@@ -8,6 +8,10 @@ function App() {
  const router = createBrowserRouter([
   {path:"/",
     element:<Applayout />
+  },
+  {
+    path:"eccendentesia.github.io/StaticWebsite/",
+    element:<Applayout/>
   }
  ])
 
