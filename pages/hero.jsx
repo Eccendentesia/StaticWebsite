@@ -1,4 +1,5 @@
 import React ,{useRef} from "react";
+import doc from "../images/doc.png"
 import "./css/hero.css";
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
@@ -36,7 +37,7 @@ export const Hero = () => {
           </div>
           <div className="col-md-6">
             <div className="container h-100 ">
-                <img src="../images/doc.png" className="rounded h-100 w-100 "/>
+                <img src={doc} className="rounded h-100 w-100 "/>
             </div>
           </div>
         </div>
