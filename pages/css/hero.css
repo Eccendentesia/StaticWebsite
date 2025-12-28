@@ -1,10 +1,15 @@
 .hero-container{
   background: linear-gradient(155deg ,#090e1d 40% ,#0d1325b2);
+  height:100% ; 
+  
+}
+.home-title{
+  line-height:60px; 
 }
 .hero-certificate-logo{
     border:1px solid rgba(6, 255, 217, 1 );
-    border-radius:40px ; 
-    max-width: 100%;
+    border-radius:20px ; 
+    max-width: 350px;
     padding: 10px 24px;
     background-color:rgba(17, 59, 53, 0.5);
     color:rgba(6, 255, 217, 1 );
@@ -43,71 +48,28 @@
 .hero-button-2:hover{
     background-color:rgba(17, 59, 53, 0.5) ; 
 }
-/* =====================
-   TABLET (≤ 992px)
-===================== */
-@media (max-width: 992px) {
-  .home-title-name,
-  .home-title {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .hero-text {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .hero-buttons {
-    justify-content: center !important;
-    gap: 20px !important;
-  }
-
-  .hero-certificate-logo {
-    margin: 0 auto;
-  }
+.header-nav-scrolled{
+  background:rgba(255, 255, 255, 0.103) ; 
+  backdrop-filter:blur(10px);
+   transition:background 0.3s , backdrop-filter 0.3s  ;
+   color:rgba(6, 255, 217, 1 ); 
 }
-
-/* =====================
-   MOBILE (≤ 768px)
-===================== */
-@media (max-width: 768px) {
-  .home-title-name,
-  .home-title {
-    font-size: 32px;
-    line-height: 1.2;
-  }
-
-  .hero-text {
-    font-size: 16px;
-  }
-
-  .hero-button-1,
-  .hero-button-2 {
-    width: 100%;
-    font-size: 18px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px !important;
-  }
-
-  .hero-certificate-logo {
-    font-size: 14px;
-  }
+.header-nav{
+  backdrop-filter: none;
+  background-color: rgb(25, 25, 25);
+  color:white ; 
 }
-
-/* =====================
-   SMALL MOBILE (≤ 480px)
-===================== */
-@media (max-width: 480px) {
-  .home-title-name,
-  .home-title {
-    font-size: 26px;
-  }
-
-  .hero-text {
-    font-size: 15px;
-  }
+.logo-name{
+  font-size:30px ; 
+}
+@media(max-width:720px){
+  .hero-button-1{
+   line-height: 18px ;
+}
+.hero-button-2{
+  line-height: 18px;   
+}
+.home-title{
+  line-height:50px; 
+}
 }

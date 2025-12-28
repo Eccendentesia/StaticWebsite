@@ -8,6 +8,10 @@
     transform:scale(1.02); 
 
 }
+.about-name{
+  font-size:50px ; 
+}
+
 .logo-holder {
   width: 60px;
   height: 60px;
@@ -31,6 +35,9 @@
 }
 @media(max-width:720px){
   .about-para{
-     padding:50px;
+     padding:20px;
+  }
+  .about-desc{
+    line-height:22px ; 
   }
 }

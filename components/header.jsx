@@ -1,11 +1,24 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
+import { LuHeartPulse } from "react-icons/lu";
 
 export const Header = () => {
+   const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg fixed-top bg-white header-nav">
+    <nav className={`navbar navbar-expand-lg fixed-top   ${scrolled ? "header-nav-scrolled" : "header-nav"}`}>
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#home">
-          Tajun <span className="brand-accent">Shaikh</span>
+        <a className="fw-bold nav-link logo-name"  href="#hero">
+          <LuHeartPulse  className="me-3" size={38}/>
+          Tajun <span className="">Shaikh</span>
         </a>
 
         <button
@@ -21,21 +34,21 @@ export const Header = () => {
         </button>
 
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul className="navbar-nav gap-lg-4">
+          <ul className="navbar-nav gap-lg-4 ">
             <li className="nav-item">
-              <a className="nav-link active" href="#home">Home</a>
+              <a className="nav-link text-white" href="#hero">Home</a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#about">About</a>
+              <a className="nav-link text-white" href="#about">About</a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#experience">Experience</a>
+              <a className="nav-link text-white" href="#experience">Experience</a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#contact">Contact</a>
+              <a className="nav-link text-white" href="#contact">Contact</a>
             </li>
           </ul>
         </div>

@@ -1,0 +1,14 @@
+.skill-cards{
+    display:flex ;
+    justify-content:space-between; 
+    
+}
+
+@media(max-width:768px){
+    .skill-name{
+        line-height:40px ; 
+    }
+    .skill-cards{
+       flex-direction:column ;  
+    }
+}

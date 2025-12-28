@@ -11,6 +11,7 @@ export const  Applayout= () => {
   return (
     <div>
       <Header />
+      <div style={{height:"60px"}}></div>
       <Hero/>
       <About/>
       <Experience/>
